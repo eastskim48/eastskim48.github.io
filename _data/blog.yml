@@ -3,14 +3,20 @@
   href: /blog/
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
-- name: Blockchain
-  href: /Blockchain/
+- name: Deep learning
+  href: /deeplearning/
 
 - name: MSP
   href: /MSP/
 
-- name: Deep learning
-  href: /Deeplearning/
+- name: Blockchain
+  href: /blockchain/
+
+- name: Life
+  href: /life/
+
+- name: Others
+  href: /others/
 
 # Don't display donation page: change donation to off at file '_config.yml'
 - name: Donate
