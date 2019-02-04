@@ -6,7 +6,6 @@ description: Dongseob's blog
 keywords: Dongseob, blog, ML, Korea univ, Blockchain, Deep learning
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://eastskim48.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
-# url: http://127.0.0.1:4000
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
@@ -16,7 +15,7 @@ author:  # change following line to your infomation.
   last_name: Kim  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
   github_username: eastskim48  # Leave blank if you don't have now
-  linkedin_id: eastskim48 # Leave blank if you don't have now
+  linkedin_id: 동섭-김-653883153 # Leave blank if you don't have now
   facebook_username: eastskim48  # Leave blank if you don't have now
   twitter_username:   # Leave blank if you don't have now
   email: eastskim48@gmail.com  # Leave blank if you don't have now
