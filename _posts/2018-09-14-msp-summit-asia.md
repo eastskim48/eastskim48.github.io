@@ -4,8 +4,8 @@ title:  "MSP ASIA Summit 2018 in Taiwan - a memorable experience as MSP!!"
 date:  2018-09-14
 desc: "Quick test on writing code snippets in a blog post"
 keywords: "Microsoft Student Partners"
-categories: [msp]
-tags: [msp, Taiwan]
+categories: [MSP]
+tags: [MSP, Taiwan]
 icon: icon-html
 ---
 \--Before I start my posting, I want to ask to you guys to be excused that I'm not good at writing in English. So, It could be possible that my intent is slightly distorted or expressed in different manner against my intention. So If you want to fix any english related error on my post, freely contact me with the comment!! I just write this post in english since I want to practice my english ability and want to share my experience with many people abroad. Thank you for reading this!--
