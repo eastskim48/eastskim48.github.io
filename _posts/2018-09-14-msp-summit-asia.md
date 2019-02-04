@@ -4,7 +4,7 @@ title:  "MSP ASIA Summit 2018 in Taiwan - a memorable experience as MSP!!"
 date:  2018-09-14
 desc: "Quick test on writing code snippets in a blog post"
 keywords: "Microsoft Student Partners"
-categories: [MSP]
+categories: [msp]
 tags: [MSP, Taiwan]
 icon: icon-html
 ---
