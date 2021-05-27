@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Markup
+title: Lifes
 ---
 
 Another sample category page.

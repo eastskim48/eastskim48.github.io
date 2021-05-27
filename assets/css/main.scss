@@ -3,4 +3,10 @@
 # only main files contain this front matter, not partials.
 ---
 
+// Hyde theming
+$sidebar-bg-color: #568ca8 !default;
+$sidebar-fg-color: #fff !default;
+$sidebar-sticky: true !default;
+$layout-reverse: false !default;
+
 @import "hydeout";
