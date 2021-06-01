@@ -3,4 +3,4 @@ layout: category
 title: Posts
 ---
 
-Another sample category page.
+일상, 관심사

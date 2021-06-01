@@ -3,4 +3,4 @@ layout: category
 title: Lifes
 ---
 
-Another sample category page.
+정리된 글들
