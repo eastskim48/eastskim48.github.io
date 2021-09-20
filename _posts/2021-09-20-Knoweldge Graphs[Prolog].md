@@ -78,5 +78,5 @@ Intelligent Agent를 구성하는 데 있어 협력해야 한다고 생각합니
 
 이 중 지식 베이스를 그래프 형태로 표현한 것이 **Knowledge Graph**이고,  
 인간이 구성한 논리 규칙을 지식에 적용하여 새로운 결과를 추론하는 것이 **Reasoning**,  
-지식에 대한 관찰을 바탕으로 기계학습을 통해 경험에 기반한 결과를 이끌어내는 것이  
-**GNN (on Knowledge Graph)** 입니다.  
+그리고 **Graph Neural Network (on Knowledge Graph)** 를 지식 그래프에 적용하면,  
+지식에 대한 관찰과 학습을 바탕으로 경험에 기반한 결과를 이끌어낼 수 있습니다.
