@@ -35,3 +35,11 @@ sidebar_home_link:  true
                                 # to enable a separate blog link.
 disqus:
   shortname: https-eastskim48-github-io
+
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-S5M3Q3BXN3"
+    anonymize_ip         : # true, false (default)
