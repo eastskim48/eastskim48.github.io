@@ -1,0 +1,22 @@
+---
+title: Writing
+permalink: /writing/
+layout: single
+classes: wide
+excerpt: Notes on AI and data systems.
+---
+
+<p>Notes on AI and data systems.</p>
+
+<div class="writing-list">
+  {% for post in site.posts %}
+    <article class="writing-list__item">
+      <p class="writing-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    </article>
+  {% else %}
+    <p>Posts are coming soon.</p>
+  {% endfor %}
+</div>
+
+<p class="writing-feed"><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></p>
