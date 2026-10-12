@@ -1,3 +1,9 @@
 source "https://rubygems.org"
-gemspec
-gem "jekyll", "~> 4.2"
+
+gem "jekyll", "~> 4.4"
+gem "liquid", "4.0.4"
+gem "jekyll-remote-theme"
+gem "jekyll-include-cache"
+gem "jekyll-feed"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"

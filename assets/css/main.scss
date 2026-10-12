@@ -1,12 +1,97 @@
 ---
-# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
-# only main files contain this front matter, not partials.
+# Only the main Sass file needs front matter
 ---
 
-// Hyde theming
-$sidebar-bg-color: #568ca8 !default;
-$sidebar-fg-color: #fff !default;
-$sidebar-sticky: true !default;
-$layout-reverse: false !default;
+@charset "utf-8";
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
-@import "hydeout";
+:root {
+  --portfolio-ink: #172b38;
+  --portfolio-muted: #53636d;
+  --portfolio-line: #d9e1df;
+  --portfolio-accent: #155e63;
+  --portfolio-accent-dark: #0b4549;
+}
+
+html { scroll-behavior: smooth; font-size: 15px; }
+body { color: var(--portfolio-ink); background: #fff; }
+a { color: var(--portfolio-accent); }
+a:hover { color: var(--portfolio-accent-dark); }
+
+.masthead { border-bottom: 1px solid var(--portfolio-line); }
+.masthead__inner-wrap { max-width: 1200px; }
+.greedy-nav { background: #fff; }
+.greedy-nav a { color: var(--portfolio-ink); }
+.site-title { font-weight: 700; letter-spacing: -0.025em; }
+.page__footer { background: #fff; color: var(--portfolio-muted); border-top: 1px solid var(--portfolio-line); margin-top: 0; }
+.page__footer-copyright { max-width: 800px; font-size: 0.78rem; font-weight: 400; }
+
+.shell { width: min(100% - 3rem, 800px); margin-inline: auto; }
+.portfolio-home h1,
+.portfolio-home h2,
+.portfolio-home h3 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: inherit; }
+.portfolio-home h1 { font-size: clamp(2.15rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.05em; margin: 0 0 0.8rem; }
+.portfolio-home h2 { font-size: clamp(1.2rem, 2vw, 1.35rem); line-height: 1.2; letter-spacing: -0.035em; margin: 0 0 0.65rem; }
+.portfolio-home p { margin-top: 0; }
+.hero { padding-block: clamp(2.6rem, 5vw, 3.7rem) 2rem; }
+.hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 96px; align-items: center; gap: 2.5rem; }
+.hero-role { font-size: 1rem; font-weight: 600; line-height: 1.5; margin-bottom: 0.15rem; }
+.hero-email { font-size: 0.88rem; line-height: 1.4; margin-bottom: 0.9rem; }
+.hero-email a { color: var(--portfolio-muted); text-decoration: none; }
+.hero-email a:hover, .hero-email a:focus-visible { color: var(--portfolio-accent); text-decoration: underline; text-underline-offset: 0.18em; }
+.hero-copy { max-width: 600px; font-size: clamp(1rem, 1.4vw, 1.08rem); line-height: 1.6; color: var(--portfolio-muted); }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.2rem; margin-top: 1.15rem; }
+.hero-photo { width: 96px; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 12px; }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.text-link { font-weight: 700; text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
+.social-link { display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem; color: var(--portfolio-ink); font-size: 1.25rem; text-decoration: none; }
+.social-link:hover, .social-link:focus-visible { color: var(--portfolio-accent); }
+.section { padding-block: 0.8rem; }
+.section:last-of-type { padding-bottom: 2.5rem; }
+.compact-section { border-top: 1px solid var(--portfolio-line); padding-top: 1.2rem; }
+.compact-section p { max-width: 700px; line-height: 1.6; color: var(--portfolio-muted); }
+.compact-section p:first-of-type { color: var(--portfolio-ink); }
+.work-links a { color: inherit; text-decoration: underline; text-underline-offset: 0.18em; }
+.background-list { list-style: none; margin: 0; padding: 0; }
+.background-item { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; align-items: center; gap: 1.1rem; padding: 0.55rem 0; }
+.background-logo { display: grid; place-items: center; width: 48px; height: 48px; overflow: hidden; border-radius: 4px; background: #fff; }
+.background-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.background-item strong, .background-item > div span, .background-item .background-date { display: block; line-height: 1.45; }
+.background-item strong { font-weight: 600; }
+.background-item div span, .background-item .background-date { color: var(--portfolio-muted); font-size: 0.88rem; }
+.background-item div span a { text-decoration: underline; text-underline-offset: 2px; }
+.background-item .background-date { white-space: nowrap; text-align: right; }
+.patent-list { list-style: none; margin: 0; padding: 0; }
+.patent-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; padding: 0.4rem 0; }
+.patent-list a { font-weight: 600; text-decoration: none; }
+.patent-list a:hover { text-decoration: underline; }
+.patent-list span { color: var(--portfolio-muted); font-size: 0.88rem; }
+
+.page__content { line-height: 1.7; }
+.page__content > p:first-child { font-size: 1rem; color: var(--portfolio-muted); }
+.page__content h2 { margin-top: 2.5rem; }
+.portfolio-list__item, .writing-list__item { border-top: 1px solid var(--portfolio-line); padding: 1.35rem 0; }
+.portfolio-list__item h2, .writing-list__item h2 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+.portfolio-list__item h2 a, .writing-list__item h2 a { color: var(--portfolio-ink); text-decoration: none; }
+.portfolio-list__item p, .publication-list p, .writing-list__item p { max-width: 760px; }
+.writing-meta { color: var(--portfolio-muted); font-size: 0.85rem; }
+.writing-feed { font-size: 0.85rem; }
+.post-tags { color: var(--portfolio-muted); font-size: 0.82rem; }
+
+@media (max-width: 480px) {
+  .shell { width: min(100% - 2rem, 800px); }
+  .hero { padding-top: 2.5rem; }
+  .hero-layout { grid-template-columns: minmax(0, 1fr) 53px; align-items: start; gap: 0.4rem 1rem; }
+  .hero-layout > div:first-child { display: contents; }
+  .portfolio-home h1 { grid-column: 1; grid-row: 1; font-size: 2rem; margin-bottom: 0; }
+  .hero-role { grid-column: 1; grid-row: 2; margin-bottom: 0; }
+  .hero-photo { grid-column: 2; grid-row: 1 / span 2; width: 53px; border-radius: 8px; }
+  .hero-email { grid-column: 1; grid-row: 3; margin-bottom: 0; }
+  .hero-copy { grid-column: 1 / -1; grid-row: 4; margin-top: 0.9rem; }
+  .hero-actions { grid-column: 1 / -1; grid-row: 5; margin-top: 0.6rem; }
+  .background-item { grid-template-columns: 42px minmax(0, 1fr); gap: 0.8rem; }
+  .background-logo { width: 42px; height: 42px; }
+  .background-item .background-date { grid-column: 2; text-align: left; margin-top: -0.55rem; }
+}

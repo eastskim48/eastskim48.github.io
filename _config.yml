@@ -1,45 +1,70 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+title: Dongseob Kim
+name: Dongseob Kim
+description: Software engineer and graduate researcher building data and AI systems.
+url: https://eastskim48.github.io
+baseurl: ""
+repository: eastskim48/eastskim48.github.io
+locale: en
+timezone: Asia/Seoul
+minimal_mistakes_skin: default
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+search: false
 
-# Setup
-title:            Dongseob's Notes
-tagline:          'A Jekyll theme'
-description:      '가볍게'
-url:              'https://eastskim48.github.io/'
-baseurl:          ''
-                  # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
-
-author:
-  name:           'Dongseob Kim'
-  url:            https://eastskim48.github.io
-
-paginate:         1
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+markdown: kramdown
+permalink: /writing/:year/:month/:day/:title/
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - scripts
 
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Sidebar link settings
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-disqus:
-  shortname: https-eastskim48-github-io
+author:
+  name: Dongseob Kim
+  bio: Software engineer and graduate researcher working on databases and AI systems.
+  location: Seoul, South Korea
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/eastskim48
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/dongseob-kim-653883153/
 
-# Analytics
-analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-S5M3Q3BXN3"
-    anonymize_ip         : # true, false (default)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      share: false
+      comments: false
+      related: false
+  - scope:
+      path: _pages
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+
+category_archive:
+  type: liquid
+  path: /writing/categories/
+tag_archive:
+  type: liquid
+  path: /writing/tags/
+
+feed:
+  path: feed.xml
