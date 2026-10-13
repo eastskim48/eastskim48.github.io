@@ -55,7 +55,7 @@ a:hover { color: var(--portfolio-accent-dark); }
 .compact-section p:first-of-type { color: var(--portfolio-ink); }
 .work-links a { color: inherit; text-decoration: underline; text-underline-offset: 0.18em; }
 .background-list { list-style: none; margin: 0; padding: 0; }
-.background-item { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; align-items: center; gap: 1.1rem; padding: 0.55rem 0; }
+.background-item { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; align-items: center; gap: 1.1rem; padding: 0.7rem 0; }
 .background-logo { display: grid; place-items: center; width: 48px; height: 48px; overflow: hidden; border-radius: 4px; background: #fff; }
 .background-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .background-item strong, .background-item > div span, .background-item .background-date { display: block; line-height: 1.45; }
